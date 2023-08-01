@@ -1,0 +1,11 @@
+AllCops:
+  EnabledByDefault: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Lint/ConstantResolution:
+  Enabled: false
