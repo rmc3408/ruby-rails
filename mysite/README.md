@@ -5,8 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Rails server:\
-``` rails server ```
+* Ruby version
 
 * System dependencies
 
@@ -23,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+sudo su - postgres
+createuser -s -r rmc3408
+sudo service postgresql start
+sudo service postgresql status
+https://dev.to/sfpear/install-and-use-postgres-in-wsl-423d
+
+postgres://rmc3408:1507@localhost:5432/mysite

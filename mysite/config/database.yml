@@ -1,0 +1,26 @@
+# PostgreSQL. Versions 9.3 and up are supported.
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  database: mysite
+  username: rmc3408
+  password: 1507
+  port: 5432
+
+
+test:
+  <<: *default
+  database: mysite_test
+
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
